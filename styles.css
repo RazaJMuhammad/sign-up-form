@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --padding: 40px;
+  --grey-background: lightgrey;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.left {
+  width: 35%;
+  background-image: url("assets/leaf\ image.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* color: white; */
+  padding: 1rem;
+}
+
+img {
+  width: 80px;
+  height: auto;
+}
+
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 92px;
+  color: white;
+}
+
+.top-section {
+  background-color: var(--grey-background);
+  padding-left: var(--padding);
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 36px;
+  padding-right: 350px;
+}
+
+.top-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.form-section {
+  padding-left: var(--padding);
+  padding-right: 350px;
+  padding-bottom: 36px;
+  background-color: rgba(255, 255, 255, 0.37);
+}
+
+h2 {
+  font-family: "Roboto";
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.input-container {
+  /* Calculates exactly 50% width minus half the gap on each side (if gap is used) */
+  flex-basis: calc(50% - 20px);
+  /* Optional: Ensures items don't grow or shrink */
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:focus {
+  border: 1px solid green;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+.submit-section {
+  background-color: var(--grey-background);
+  padding-left: var(--padding);
+  height: 100%;
+  padding-top: 15px;
+}
+
+.submit-button {
+  color: white;
+  width: 200px;
+  height: 40px;
+  background-color: #596d48;
+  font-family: "Roboto";
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(39, 39, 39, 0.25);
+  padding-bottom: 5px;
+}
+
+.account-text {
+  font-family: "Roboto";
+}
+
+a {
+  color: #4d5c41;
+  text-decoration: none;
+}
+a:visited {
+  color: #4d5c41;
+}
